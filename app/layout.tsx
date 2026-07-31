@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     default: 'Acme Dashboard',
   },
   description: 'The acme dashboard.',
-  metadataBase: new URL('url-to-metadata'),
+  metadataBase: new URL('https://url-to-metadata.com'),
 };
 export default function RootLayout({
   children,

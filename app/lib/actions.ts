@@ -82,10 +82,10 @@ export async function updateInvoice(id: string, formData: FormData) {
     WHERE id = ${id}
     `;
   } catch (error) {
-    console.error(error);
-    return {
-      message: "Database Error: Failed to update Invoice.",
-    };
+    // console.error(error);
+    // return {
+    //   message: "Database Error: Failed to update Invoice.",
+    // };
   }
   revalidatePath("/dashboard/invoices");
   redirect("/dashboard/invoices");
@@ -100,10 +100,10 @@ export async function deleteInvoice(id: string) {
         `;
     revalidatePath("/dashboard/invoices");
   } catch (error) {
-    console.error(error);
-    return {
-      message: "Database Error: Failed to delete Invoice.",
-    };
+    // console.error(error);
+    // return {
+    //   message: "Database Error: Failed to delete Invoice.",
+    // };
   }
 }
 
